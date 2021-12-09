@@ -6,12 +6,24 @@ package com.myspace.second;
 
 public class d1 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public d1() {
-    }
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.Integer id;
 
+	public d1() {
+	}
 
+	public java.lang.Integer getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Integer id) {
+		this.id = id;
+	}
+
+	public d1(java.lang.Integer id) {
+		this.id = id;
+	}
 
 }
